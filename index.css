@@ -1,0 +1,21 @@
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+}
+header img {
+    float: right;
+}
+footer {
+    background-color: blue;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
