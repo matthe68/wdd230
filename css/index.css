@@ -27,7 +27,7 @@ footer {
     color: white;
 }
 footer a {
-    color: blue;
+    color: rgb(0, 239, 255);
 }
 footer a:hover {
     color: gold;
