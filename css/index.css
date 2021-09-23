@@ -4,7 +4,8 @@ body {
     margin-right: auto;
 }
 header {
-    background-color: blue;
+    background-color: RGB(135, 68, 68);
+    color: white;
     width: 100%;
     text-align: center;
     height: 100px;
@@ -14,8 +15,20 @@ header img {
     float: right;
 }
 footer {
-    background-color: blue;
+    background-color: RGB(135, 68, 68);
     height: 50px;
     padding-top: 15px;
     text-align: center;
+}
+footer #last-updated {
+    color: yellow;
+}
+footer {
+    color: white;
+}
+footer a {
+    color: blue;
+}
+footer a:hover {
+    color: gold;
 }
