@@ -1,0 +1,22 @@
+@media(min-width: 600px) {
+    header img {
+        float: right;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #web-grid {
+        display: grid;
+        grid-template-columns: 2;
+        grid-gap: 20px;
+    }
+    #web-grid #ksl-web-block {
+        grid-column: 1 / 2;
+    }
+    #web-grid #pandora-web-block {
+        grid-column: 2 / 3;
+    }
+}
