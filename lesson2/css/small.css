@@ -48,17 +48,26 @@ footer a:hover {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
-#web-grid .block-content {
+.block-content {
     display: block;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
     justify-self: center;
+    color: white;
+}
+#web-grid a {
+    color: rgb(0, 239, 255);
+}
+#web-grid a:hover {
+    color: gold;
 }
 #web-grid h2 {
     text-align: center;
     background-color: white;
     margin-top: 0;
+    color: black;
     border-radius: 22.5px 22.5px 0 0;
 }
