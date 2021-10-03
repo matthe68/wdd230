@@ -1,0 +1,10 @@
+@media only screen and (min-width: 32.5em) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main {
+    max-width: 787px;
+  }
+}

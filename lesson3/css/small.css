@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(255,255,255);
+  width: 100%;
+  font-family: 'Maitree', serif;
+}
+header {
+  background-color: RGB(46, 196, 182);
+  color: white;
+  text-align: center;
+}
+header h1 {
+  background-color: RGB(46, 196, 182);
+}
+header ul {
+  width: 100%;
+  padding-left: 0;
+  list-style: NONE;
+  display: flex;
+  flex-direction: column;
+}
+header ul li {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  color: white;
+}
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2 {
+  text-align: center;
+  background-color: rgb(203,243,240);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  color: RGB(46, 196, 182);
+}
+a:hover {
+  color: rgb(255, 159, 28);
+}
+img {
+  max-width: 100%;
+}
+
