@@ -1,0 +1,137 @@
+body {
+  background-color: rgb(255, 250, 176);
+  width: 100%;
+  font-family: 'Maitree', serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,46,93);
+  color:rgb(255, 255, 255);
+}
+header img {
+  width: 76px;
+  height: 76px;
+}
+#stacked-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#stacked-header > * {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+#stacked-header p {
+  color:rgb(255, 250, 176);
+}
+nav button {
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+  cursor:pointer;
+}
+nav {
+  margin-bottom: 10px;
+  box-shadow: 0 5px 8px #888888;
+  background-color: white;
+}
+nav ul {
+  width: 100%;
+  padding-left: 0;
+  list-style: NONE;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-weight: 1000;
+  font-size: larger;
+  color: rgb(0,46,93);
+  font-weight:900;
+  margin-top: 0;
+  text-align: center;
+}
+nav ul li {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0,46,93);
+}
+nav li a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+nav li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(0,46,93);
+  opacity: 0;
+  transition: opacity 700ms, transform 700ms;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+nav li a:hover::after,
+nav li a:focus::after{
+  transform: scale(1);
+}
+nav ul.hide {
+  display: none;
+}
+.first-header {
+  border-radius: 25px 25px 0 0;
+}
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 0 5px 8px #888888;
+  overflow: hidden;
+}
+h1, h2 {
+  text-align: center;
+  background-color: rgb(0,46,93);
+  color: rgb(255, 255, 255);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  color: rgb(46, 196, 182);
+}
+.main-parts {
+  margin-top: 10px;
+  padding: 20px;
+  /* border: 1px solid rgba(0,0,0.4); */
+  background-color: rgba(0,0,0,.1);
+}
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,46,93);
+  color:rgb(255, 255, 255);
+}
+
