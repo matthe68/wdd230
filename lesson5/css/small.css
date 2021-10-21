@@ -90,7 +90,10 @@ nav li a::after {
 }
 
 nav li a:hover::after,
-nav li a:focus::after{
+nav li a:focus::after {
+  transform: scale(1);
+}
+.active::after {
   transform: scale(1);
 }
 nav ul.hide {
@@ -123,12 +126,91 @@ a {
 }
 #banner img {
 width: 100%;
+margin-bottom: 0;
+}
+#banner {
+  position: relative;
+}
+#banner ul {
+  margin-top: 0;
 }
 #weather-summary {
-  position: absolute;
-  top: -20px;
-  left: 20px;
+  position: block;
+  background-color: rgba(0,46,93,1);
+  color: white;
+  list-style-type: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 6;
+  grid-gap: 1em;
+}
+.table-header {
+  grid-column: 1 / 3;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.label {
+  grid-column: 1 / 2;
+  text-align: right;
+}
+.value {
+  grid-column: 2 / 3;
+  text-align: left;
+}
+#five-day-forecast {
+  display: none;
+}
+#days-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: 0;
 
+}
+#days-grid li {
+  display: flex;
+  flex-direction: column;
+  margin-left: .1em;
+  margin-right: .1em;
+  background-color: #eee;
+  font-weight: 900;
+}
+#days-grid li:nth-of-type(1) {
+  margin-left: 0;
+}
+#days-grid li:nth-of-type(5) {
+  margin-right: 0;
+}
+#five-day-forecast h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: rgb(0,46,93);
+  background-color: white;
+}
+#days-grid li .day {
+  background-color: rgb(0,46,93);
+  color: white;
+}
+#days-grid img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article p {
+  margin: 1em;
+}
+#article-floater {
+  float: right;
+  margin-left: .5em;
+  width: 50vw;
 }
 footer {
   padding-top: 10px;
@@ -139,5 +221,15 @@ footer {
   align-items: center;
   background-color: rgb(0,46,93);
   color:rgb(255, 255, 255);
+  text-align: center;
+}
+footer img {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.active {
+  display: block;
+  font-weight: 900;
 }
 

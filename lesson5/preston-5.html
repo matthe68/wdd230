@@ -26,19 +26,19 @@
     <nav>
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="primary-nav" class="hide">
-        <li><a href="preston-5.html">Home</a></li>
-        <li><a href="preston-5.html">Preston</a></li>
-        <li><a href="preston-5.html">Soda Springs</a></li>
-        <li><a href="preston-5.html">Fish Haven</a></li>
-        <li><a href="preston-5.html">Storm Center</a></li>
-        <li><a href="preston-5.html">Gallery</a></li>
+        <li class="navElement"><a href="#">Home</a></li>
+        <li class="navElement"><a href="#">Preston</a></li>
+        <li class="navElement"><a href="#">Soda Springs</a></li>
+        <li class="navElement"><a href="#">Fish Haven</a></li>
+        <li class="navElement"><a href="#">Storm Center</a></li>
+        <li class="navElement"><a href="#">Gallery</a></li>
       </ul>
     </nav>
     <main>
       <div id="banner">
         <img src="./images/clouds.png" alt="clouds"/>
         <ul id="weather-summary">
-          <li class="table-header">Weather Summary</li>
+          <li class="table-header">Todays Weather Summary</li>
           <li class="label">Currently:</li>
           <li class="value">Sunny</li>
           <li class="label">High:</li>
@@ -51,51 +51,55 @@
           <li class="value">5 mph</li>
         </ul>
       </div>
-      <div id="5-day-forecast">
-        <h1>5 Day Weather Forecast</h1>
+      <div id="five-day-forecast">
+        <h1 id="forecast">5 Day Weather Forecast</h1>
         <ul id="days-grid">
           <li>
-            <span>Monday</span>
+            <span class="day">Monday</span>
             <img src="./images/cloud.png" alt="cloudy">
-            <span class="data">52 &#176;</span>
+            <span class="data">52 &#176;F</span>
           </li>
           <li>
-            <span>Tuesday</span>
+            <span class="day">Tuesday</span>
             <img src="./images/sunny.png" alt="sunny">
-            <span class="data">57 &#176;</span>
+            <span class="data">57 &#176;F</span>
           </li>
           <li>
-            <span>Wednesday</span>
+            <span class="day">Wednesday</span>
             <img src="./images/sunny.png" alt="sunny">
-            <span class="data">58 &#176;</span>
+            <span class="data">58 &#176;F</span>
           </li>
           <li>
-            <span>Thursday</span>
+            <span class="day">Thursday</span>
             <img src="./images/partial-cloudy.png" alt="partial cloudy">
-            <span class="data">56 &#176;</span>
+            <span class="data">56 &#176;F</span>
           </li>
           <li>
-            <span>Friday</span>
+            <span class="day">Friday</span>
             <img src="./images/sunny.png" alt="sunny">
-            <span class="data">60 &#176;</span>
+            <span class="data">60 &#176;F</span>
           </li>
         </ul>
       </div>
       <div class="article">
+        <img id="article-floater" src="./images/hiker.png" alt="hiker"/>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Ut sem nulla pharetra diam sit amet nisl suscipit. In metus vulputate eu scelerisque felis imperdiet. Libero enim sed faucibus turpis in. Scelerisque fermentum dui faucibus in. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sit amet risus nullam eget felis. Id leo in vitae turpis massa sed elementum tempus. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Maecenas accumsan lacus vel facilisis volutpat est velit. Vitae congue mauris rhoncus aenean vel. Non nisi est sit amet facilisis magna etiam. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Id aliquet risus feugiat in ante.
+        </p>
+        <p>  
           Mauris commodo quis imperdiet massa. Duis ultricies lacus sed turpis tincidunt id aliquet. Neque ornare aenean euismod elementum nisi. Mollis nunc sed id semper. Vulputate ut pharetra sit amet aliquam id diam. Cras sed felis eget velit aliquet sagittis id. Dolor morbi non arcu risus quis. Id donec ultrices tincidunt arcu. A diam maecenas sed enim ut sem viverra aliquet. Nullam vehicula ipsum a arcu cursus vitae. Hendrerit dolor magna eget est lorem ipsum. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Tellus pellentesque eu tincidunt tortor. Pellentesque elit eget gravida cum sociis natoque penatibus.
         </p>
-        <img id="article-floater" src="./images/hiker.png" alt="hiker"/>
       </div>
     </main>
     <footer>
       <img id=map src="./images/preston-map.png" alt="map"/>
-      <h1 id="contact-info-header">The Weather Site</h1>
-      <p>30 N 1st E</p>
-      <p>Preston, ID 83263</p>
-      <p>999.999.9999</p>
-      <div id="today"></div>
+      <div id="footer-contact-info">
+        <h1 id="contact-info-header">The Weather Site</h1>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>999.999.9999</p>
+        <div id="today"></div>
+      </div>
     </footer>
   </body>
 

@@ -31,4 +31,40 @@
   nav button {
     display: none;
   }
+  #banner {
+    display: static;
+  }
+  #banner img {
+  width: 100%;
+  }
+  #banner {
+    position: relative;
+  }
+  #weather-summary {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background-color: rgba(0,46,93,.8);
+    color: white;
+    list-style-type: none;
+    box-shadow: 7px 7px 10px #000000;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 6;
+    grid-gap: 1em;
+  }
+  #five-day-forecast {
+    display: flex;
+    flex-direction: column;
+  }
+  #article-floater {
+    max-width: 300px;
+  }
+  footer img {
+    max-width: 400px;
+  }
 }
