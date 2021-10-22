@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <script src="./js/preston-5.js"></script>
+    <script src="https://kit.fontawesome.com/cd47c3c73d.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <aside id="notification-banner"></aside>
+    <ul id="notification-banner"></ul>
     <header>
       <img src="./images/weather-icon.png" alt="weather icon">
       <div id="stacked-header">
@@ -26,12 +27,12 @@
     <nav>
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="primary-nav" class="hide">
-        <li class="navElement"><a href="#">Home</a></li>
-        <li class="navElement"><a href="#">Preston</a></li>
-        <li class="navElement"><a href="#">Soda Springs</a></li>
-        <li class="navElement"><a href="#">Fish Haven</a></li>
-        <li class="navElement"><a href="#">Storm Center</a></li>
-        <li class="navElement"><a href="#">Gallery</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Home</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Preston</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Soda Springs</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Fish Haven</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Storm Center</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="#">Gallery</a></li>
       </ul>
     </nav>
     <main>
