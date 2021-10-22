@@ -23,4 +23,58 @@
     margin-left: 30px;
     text-align: left;
   }
+  #days-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 0;
+    z-index: 2;
+  
+  }
+  #days-grid li {
+    display: flex;
+    flex-direction: column;
+    margin-left: .1em;
+    margin-right: .1em;
+    background-color: rgba(238, 238, 238, 0.9);
+    font-weight: 900;
+    box-shadow: 7px 7px 10px #000000;
+  }
+  #days-grid li:nth-of-type(1) {
+    margin-left: 0;
+  }
+  #days-grid li:nth-of-type(5) {
+    margin-right: 0;
+  }
+  #five-day-forecast {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+  }
+  #five-day-forecast h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgb(0,46,93);
+    background-color: rgba(255, 255, 255, 0.809);
+  }
+  #days-grid li .day {
+    background-color: rgb(0,46,93);
+    color: white;
+    font-size: 1.2em;
+  }
+  #five-day-forecast #days-grid img {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #days-grid li .data {
+    font-size: 1.2em;
+  }
 }

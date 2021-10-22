@@ -2,6 +2,7 @@ body {
   background-color: rgb(255, 250, 176);
   width: 100%;
   font-family: 'Maitree', serif;
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -38,7 +39,7 @@ nav button {
   cursor:pointer;
 }
 nav {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   box-shadow: 0 5px 8px #888888;
   background-color: white;
 }
@@ -135,6 +136,7 @@ a {
 }
 #banner img {
 width: 100%;
+max-height: 80vh;
 margin-bottom: 0;
 }
 #banner {
@@ -166,49 +168,6 @@ margin-bottom: 0;
 .value {
   grid-column: 2 / 3;
   text-align: left;
-}
-#five-day-forecast {
-  display: none;
-}
-#days-grid {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  margin-top: 0;
-
-}
-#days-grid li {
-  display: flex;
-  flex-direction: column;
-  margin-left: .1em;
-  margin-right: .1em;
-  background-color: #eee;
-  font-weight: 900;
-}
-#days-grid li:nth-of-type(1) {
-  margin-left: 0;
-}
-#days-grid li:nth-of-type(5) {
-  margin-right: 0;
-}
-#five-day-forecast h1 {
-  margin-bottom: 0;
-  margin-top: 0;
-  color: rgb(0,46,93);
-  background-color: white;
-}
-#days-grid li .day {
-  background-color: rgb(0,46,93);
-  color: white;
-}
-#days-grid img {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .article p {
   margin: 1em;
@@ -276,4 +235,7 @@ footer img {
   background-color: transparent;
   color: rgba(91, 91, 91, 0.85);
   cursor: pointer;
+}
+#five-day-forecast {
+  display: none;
 }
