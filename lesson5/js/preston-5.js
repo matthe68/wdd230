@@ -33,7 +33,7 @@ window.onload = function() {
   // })
 
   //IF TODAY IS FRIDAY, SHOW ANNOUNCEMENT
-  if (dayName == "Thursday") {
+  if (dayName == "Friday") {
     var listE = document.querySelector('#notification-banner');
     let li = document.createElement('li');
     let deleteButton = document.createElement('button');
