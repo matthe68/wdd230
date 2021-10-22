@@ -32,13 +32,11 @@
     display: none;
   }
   #banner {
-    display: static;
+    display: block;
+    position: relative;
   }
   #banner img {
   width: 100%;
-  }
-  #banner {
-    position: relative;
   }
   #weather-summary {
     position: absolute;
