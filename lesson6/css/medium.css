@@ -1,0 +1,62 @@
+@media only screen and (min-width: 32.5em) {
+  nav {
+    background-color: white;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96vw;
+    padding-left:2vw;
+    padding-right:2vw;
+  }
+  nav ul li {
+    align-self: center;
+    border-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main {
+    max-width: 787px;
+  }
+  header img {
+    width: 128px;
+    height: 128px;
+  }
+  nav ul.hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav button {
+    display: none;
+  }
+  #banner {
+    display: block;
+    position: relative;
+  }
+  #banner img {
+  width: 100%;
+  }
+  #weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0,46,93,.8);
+    color: white;
+    list-style-type: none;
+    box-shadow: 7px 7px 10px #000000;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+    grid-gap: 1em;
+  }
+  #article-floater {
+    max-width: 300px;
+  }
+  footer img {
+    max-width: 400px;
+  }
+}
