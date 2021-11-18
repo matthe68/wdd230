@@ -49,6 +49,14 @@ window.onload = function() {
     })
   }
 }
+WebGLUniformLocation.load({
+  google: {
+    families: [
+      'Maitree', 
+      'Source Sans Pro'
+    ]
+  }
+})
 //FUNCTION TO TOGGLE MENU
 function toggleMenu() {
   document.getElementById("primary-nav").classList.toggle("hide");
