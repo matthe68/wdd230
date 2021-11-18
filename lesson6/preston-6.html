@@ -51,13 +51,13 @@
         <li class="label">Currently:</li>
         <li class="value">Sunny</li>
         <li class="label">High:</li>
-        <li class="value">76 &#176;F</li>
+        <li class="value"><span id="current-temp">52</span>&#176;F</li>
         <li class="label">Wind Chill:</li>
-        <li class="value">&#176;F</li>
+        <li class="value"><span id="wind-chill"></span></li>
         <li class="label">Humidity:</li>
         <li class="value">69%</li>
         <li class="label">Wind Speed:</li>
-        <li class="value">5 mph</li>
+        <li class="value"><span id="current-wind-speed">5</span>mph</li>
       </ul>
       <div id="five-day-forecast">
         <h1 id="forecast">5 Day Weather Forecast</h1>
@@ -113,4 +113,6 @@
     </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
+  <script src="./js/windchill.js"></script>
 </html>
