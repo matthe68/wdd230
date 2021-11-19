@@ -16,8 +16,8 @@
     padding-left: 0;
     padding-right: 0;
   }
-  main {
-    max-width: 787px;
+  body main {
+    max-width: 875px;
   }
   header img {
     width: 128px;

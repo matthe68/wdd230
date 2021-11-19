@@ -8,29 +8,48 @@ window.onload = function() {
   let formattedDate = dayName + ", " + today.getDate() + " " + monthName + " "  + today.getFullYear();
   let todayTag = document.querySelector("#today");
   todayTag.innerHTML = formattedDate;
+
+
+  var lastVisit = localStorage.getItem('lastVisitToIdahoWeather');
+  console.log("lastVisit: ", lastVisit);
+  var todayStorage = today;
+  console.log("today: ", today);
+  localStorage.setItem('lastVisitToIdahoWeather', today);
+
+  if (lastVisit != null) {
+    console.log("lastVisit: ", lastVisit);
+    lastVisit = new Date(lastVisit);
+    let daysSinceLastVisit = (todayStorage.getTime() - lastVisit.getTime()) / (1000 * 3600 * 24);
+    daysSinceLastVisit = Math.round(daysSinceLastVisit * 10) / 10
+    console.log("daysSinceLastVisit: ", daysSinceLastVisit);
+    document.querySelector('#days-since-last-visit').innerHTML = String(daysSinceLastVisit) + " days since your last visit";
+  } else {
+    console.log("This is their first visit to the website");
+    document.querySelector('#days-since-last-visit').innerHTML = String(daysSinceLastVisit) + "Welcome Newcomer!";
+  }
   
   //MAKE HOME PAGE BE ACTIVE
-  var elems = document.querySelectorAll(".navElement");
-  [].forEach.call(elems, function(el) {
-    if (el.firstChild.text == "Home") 
-    {
-      el.classList.add("active");
-    }
-  })
+  // var elems = document.querySelectorAll(".navElement");
+  // [].forEach.call(elems, function(el) {
+  //   if (el.firstChild.text == "Home") 
+  //   {
+  //     el.classList.add("active");
+  //   }
+  // })
   //      The below code would make it so that the current page is marked as active, since I am using filler links though that don't go 
   //      anywhere this means it makes all of the links seem active. Until I make the other pages the above code will make the Home page 
   //      start as active and then the below function will make it so that each link clicked in turn will make that link active
 
 
-  // var thispageurl = window.location.href;
-  // var elems = document.querySelectorAll(".navElement");
-  // [].forEach.call(elems, function(el) {
-  //   console.log("el.firstChild.href: ", el.firstChild.href, " thispageurl: ", thispageurl);
-  //   if (el.firstChild.href === thispageurl) 
-  //   {
-  //     el.classList.add("active");
-  //   }
-  // })
+  var thispageurl = window.location.href;
+  var elems = document.querySelectorAll(".navElement");
+  [].forEach.call(elems, function(el) {
+    console.log("el.firstChild.href: ", el.firstChild.href, " thispageurl: ", thispageurl);
+    if (el.firstChild.href === thispageurl) 
+    {
+      el.classList.add("active");
+    }
+  })
 
   //IF TODAY IS FRIDAY, SHOW ANNOUNCEMENT
   if (dayName == "Friday") {
