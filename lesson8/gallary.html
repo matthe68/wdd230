@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1">
+    <title>Preston Weather</title>
+    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="./css/small.css">
+    <link type="text/css" rel="stylesheet" href="./css/medium.css">
+    <link type="text/css" rel="stylesheet" href="./css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="./js/preston.js"></script>
+    <script src="https://kit.fontawesome.com/cd47c3c73d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <ul id="notification-banner"></ul>
+    <header>
+      <img src="./images/weather-icon.png" alt="weather icon">
+      <div id="stacked-header">
+        <h1>Idaho Weather</h1>
+        <p>Getting YOU out there</p>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li class="navElement" onclick = "toggleActive(this)"><a href="../index.html">Home</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="preston.html">Preston</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="soda-springs.html">Soda Springs</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="fish-haven.html">Fish Haven</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="storm-center.html">Storm Center</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main id="gallery-main">
+      <h1 class="first-header">Gallery</h1>
+      <div class="gallery">
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/1sunny.jpg" alt="sunny" width="585"/>
+          <figcaption>Sunny over Greenville</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/2snow.jpg" alt="snowing" width="585"/>
+          <figcaption>Snow in the mountains</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/3lightning.jpg" alt="lightning" width="585"/>
+          <figcaption>Lightning over Springville</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/4partly-cloudy.jpg" alt="partly cloudy" width="585"/>
+          <figcaption>Partly cloudy over Boise</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/5foggy.jpg" alt="foggy" width="585"/>
+          <figcaption>Fog in Clark County</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/6rainy.jpg" alt="rainy" width="585"/>
+          <figcaption>Rain in Boise</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/7rainbow.jpg" alt="rainbow" width="585"/>
+          <figcaption>Rainbow south of Franklin</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/8cold.jpg" alt="snow" width="585"/>
+          <figcaption>Franklin Park covered in fresh snow</figcaption>
+        </figure>
+        <figure>
+          <img src="images/place-holder.jpg" data-src="images/9hot.jpg" alt="hot sun" width="585"/>
+          <figcaption>Sunny over Idaho Falls</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <img id="map" src="./images/preston-map.PNG" alt="map"/>
+      <div id="footer-contact-info">
+        <h1 id="contact-info-header">The Weather Site</h1>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>999.999.9999</p>
+        <p id="today"></p>
+        <p id="days-since-last-visit"></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
+    <script src="./js/lazy-load.js"></script>
+  </body>
+</html>
