@@ -147,6 +147,7 @@ nav ul.hide {
   padding: .2em;
 }
 main {
+  margin-top: 1em;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -296,3 +297,14 @@ footer {
   display: inline;
   margin: 0;
 }
+/* ----------- Storm Center Form ---------------*/
+
+#storm-center-form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+}
+
+/* ---------------------------------------------*/
