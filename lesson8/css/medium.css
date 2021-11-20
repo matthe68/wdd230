@@ -62,4 +62,7 @@
   .contact-information img {
     max-width: 400px;
   }
+  #storm-center-form {
+    width: 96%;
+  }
 }

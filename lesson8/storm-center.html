@@ -40,17 +40,17 @@
         <form method="get" action="thanks.html" id="storm-center-form">
           <fieldset>
             <legend>Contact Info</legend>
-            <label>Full Name*<input type="text" name="fullname" required></label>
-            <label>Email<input type="email" name="email"></label>
-            <label>Phone Number*<input type="tel" name="phone" required></label>
-            <label>Zip Code*<input type="number" name="zipcode" required></label>
+            <label class="top">Full Name*<input type="text" name="fullname" pattern="^[a-zA-Z ]{5,}$" required></label>
+            <label class="top">Email<input type="email" name="email"></label>
+            <label class="top">Phone Number*<input type="tel" name="phone" pattern="^[0-9]{10,}$" required></label>
+            <label class="top">Zip Code*<input type="number" name="zipcode" min=10000 required></label>
           </fieldset>
           <fieldset>
             <legend>Storm Info</legend>
-            <label>Storm Date<input type="date" name="date"></label>
-            <label>Storm Type
+            <label class="top">Storm Date<input type="date" name="date"></label>
+            <label class="top">Storm Type
               <select name ="storm-type">
-                <option value="">Select storm type...</option>
+                <option value="" selected="true" disabled="disabled">Select storm type...</option>
                 <option value="flash-flood">Flash Flood</option>
                 <option value="hail">Hail</option>
                 <option value="hurricane">Hurricane</option>
@@ -58,7 +58,7 @@
                 <option value="tornado">Tornado</option>
               </select>
             </label>
-            <label>Storm Severity (1 to 10)<input type="range" value="5" min="1" max="10" list="tickmarks" name="severity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+            <label class="top">Storm Severity (1 to 10)<div id="storm-severity"><input type="range" value="5" min="1" max="10" list="tickmarks" name="severity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></div></label>
             <datalist id="tickmarks">
               <option value="0">
               <option value="1">
@@ -72,25 +72,22 @@
               <option value="9">
               <option value="10">
             </datalist>
-            <label>Storm Region
+            <label class="top">Storm Region
               <select name ="storm-region">
-                <option value="">Select storm region...</option>
+                <option value="" selected="true" disabled="disabled">Select storm region...</option>
                 <option value="preston">Preston</option>
                 <option value="soda-springs">Soda Springs</option>
                 <option value="fish-haven">Fish Haven</option>
               </select>
             </label>
-            <!-- <label>Storm Region<input type="email" name="email"></label>                 TO DO                  
-            options: Select Region ..., Preston, Soda Springs, Fish Haven
-            -->
-            <div>User In-Danger Level</div>
-            <label><input type="radio" name="danger-level" value="yes">yes</label>
-            <label><input type="radio" name="danger-level" value="maybe">maybe</label>
-            <label><input type="radio" name="danger-level" value="no">no</label>
+            <div class="top">User In-Danger Level</div>
+            <label class="sbs"><input type="radio" name="danger-level" value="yes">yes</label>
+            <label class="sbs"><input type="radio" name="danger-level" value="maybe">maybe</label>
+            <label class="sbs"><input type="radio" name="danger-level" value="no">no</label>
 
           </fieldset>
-          <label>Additional Information or Comments <textarea name="comment" form="storm-center-form" placeholder="Enter comment here..."></textarea></label>
-          <label>Report Storm<input type="submit"></label>
+          <label class="top">Additional Information or Comments <textarea name="comment" form="storm-center-form" placeholder="Enter comment here..."></textarea></label>
+          <input type="submit" value="Report Storm" class="submitBtn">
         </form>
       </div>
     </main>
