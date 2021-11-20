@@ -80,4 +80,9 @@
   #days-grid li .data {
     font-size: 1.2em;
   }
+  .gallery figure:hover {
+    animation-name: hoverfigure;
+    animation-duration: .2s;
+    margin: -5px;
+  }
 }
