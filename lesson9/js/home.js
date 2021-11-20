@@ -37,6 +37,7 @@ fetch(requestURL)
         card.appendChild(div);
         card.appendChild(image);
         let location =  String(`./${String(towns[i].name).replace(' ', '-')}.html`);
+        location = location.toLowerCase();
         console.log("location: ", location);
         function openLink(e) {
           e.preventDefault();
