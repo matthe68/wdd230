@@ -19,11 +19,6 @@
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
-  .gallery figure:hover {
-    animation-name: hoverfigure;
-    animation-duration: .2s;
-    margin: -5px;
-  }
   main {
     max-width: 875px;
   }
@@ -64,7 +59,7 @@
   #article-floater {
     max-width: 300px;
   }
-  footer img {
+  .contact-information img {
     max-width: 400px;
   }
 }

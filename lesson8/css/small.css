@@ -212,7 +212,7 @@ margin-bottom: 0;
   min-width: 50px;
   min-height: 50px;
 }
-footer {
+.contact-information {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -223,7 +223,7 @@ footer {
   color:rgb(255, 255, 255);
   text-align: center;
 }
-footer img {
+.contact-information img {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
@@ -273,4 +273,26 @@ footer img {
 }
 #five-day-forecast {
   display: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0;
+  box-shadow: 0 5px 8px #888888;
+  background-color: white;
+  padding: 1em;
+}
+#bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bottom span {
+  padding-left: .2em;
+  padding-right: .2em;
+  display: inline;
+  margin: 0;
 }

@@ -11,15 +11,15 @@
     padding-top: 2px;
     padding-bottom: 2px;
   }
-  footer {
+  .contact-information {
     display: flex;
     flex-direction: row;
   }
-  footer img {
+  .contact-information img {
     margin-left: 0;
     margin-right: 0;
   }
-  footer #footer-contact-info {
+  .contact-information #footer-contact-info {
     margin-left: 30px;
     text-align: left;
   }
@@ -79,5 +79,10 @@
   }
   #days-grid li .data {
     font-size: 1.2em;
+  }
+  .gallery figure:hover {
+    animation-name: hoverfigure;
+    animation-duration: .2s;
+    margin: -5px;
   }
 }
