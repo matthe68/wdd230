@@ -34,7 +34,6 @@
         <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
       </ul>
     </nav>
-    <div id="banner">
     <main>
       <div class="article">
         <form method="get" action="thanks.html" id="storm-center-form">
@@ -50,7 +49,7 @@
             <label class="top">Storm Date<input type="date" name="date"></label>
             <label class="top">Storm Type
               <select name ="storm-type">
-                <option value="" selected="true" disabled="disabled">Select storm type...</option>
+                <option value="" selected disabled="disabled">Select storm type...</option>
                 <option value="flash-flood">Flash Flood</option>
                 <option value="hail">Hail</option>
                 <option value="hurricane">Hurricane</option>
@@ -58,7 +57,7 @@
                 <option value="tornado">Tornado</option>
               </select>
             </label>
-            <label class="top">Storm Severity (1 to 10)<div id="storm-severity"><input type="range" value="5" min="1" max="10" list="tickmarks" name="severity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></div></label>
+            <label class="top">Storm Severity (1 to 10) <span id="storm-severity"><input type="range" value="5" min="1" max="10" list="tickmarks" name="severity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></span></label>
             <datalist id="tickmarks">
               <option value="0">
               <option value="1">
@@ -74,7 +73,7 @@
             </datalist>
             <label class="top">Storm Region
               <select name ="storm-region">
-                <option value="" selected="true" disabled="disabled">Select storm region...</option>
+                <option value="" selected disabled="disabled">Select storm region...</option>
                 <option value="preston">Preston</option>
                 <option value="soda-springs">Soda Springs</option>
                 <option value="fish-haven">Fish Haven</option>
