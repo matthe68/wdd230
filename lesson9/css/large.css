@@ -86,4 +86,25 @@
     margin: -5px;
     box-shadow: 10px 15px 8px #888888;
   }
+  #cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:1em;
+    width: auto;
+  }
+  #cards-container section {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  #cards-container section:hover {
+    animation-name: hoverfigure;
+    animation-duration: .2s;
+    margin: -5px;
+    box-shadow: 10px 15px 8px #888888;
+  }
+  #cards-container section img {
+    align-self: end;
+  }
+  #cards-container section div {
+    height: 15rem;
+  }
 }
