@@ -400,3 +400,13 @@ form label textarea {
 }
 
 /* ---------------------------------------------*/
+/* ----------- Wireframes ---------------*/
+#wire-frame-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wire-frame-container figure {
+  text-align: center;
+}
+/* --------------------------------------*/
