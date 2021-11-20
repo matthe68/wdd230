@@ -68,7 +68,7 @@
   @media (max-width: 50em) {
     #cards-container{
       grid-template-columns: 1fr;
-      grid-template-rows: 3;
+      grid-template-rows: 1fr 1fr 1fr;
       margin: 2%;
     }
     #cards-container section {
