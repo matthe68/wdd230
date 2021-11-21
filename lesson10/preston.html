@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1">
+    <title>Preston Weather</title>
+    <link type="text/css" rel="stylesheet" href="./css/small.css">
+    <link type="text/css" rel="stylesheet" href="./css/medium.css">
+    <link type="text/css" rel="stylesheet" href="./css/large.css">
+    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="./js/preston.js"></script>
+    <script src="https://kit.fontawesome.com/cd47c3c73d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <ul id="notification-banner"></ul>
+    <header>
+      <img src="./images/weather-icon.png" alt="weather icon">
+      <div id="stacked-header">
+        <h1>Idaho Weather</h1>
+        <p>Getting YOU out there</p>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li class="navElement" onclick = "toggleActive(this)"><a href="home.html">Home</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="preston.html">Preston</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="soda-springs.html">Soda Springs</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="fish-haven.html">Fish Haven</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="storm-center.html">Storm Center</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div id="banner">
+      <!-- <figure>
+        <img src="images/wdd230_image_franklinOriginal.jpeg"/>
+        <img src="./images/clouds-1000.png" alt="clouds"/>
+      </figure> -->
+      <picture class="banner-pic">
+        <source media="(max-width: 400px)" srcset="./images/Banner-400.jpg">
+        <source media="(max-width: 1000px)" srcset="./images/Banner-1000.jpg">
+        <source media="(max-width: 1600px)" srcset="./images/Banner-1600.jpg">
+        <img src="./images/Banner-2200.jpg" alt="banner pic">
+      </picture>
+      <ul id="weather-summary">
+        <li class="table-header">Todays Weather Summary</li>
+        <li class="label">Currently:</li>
+        <li class="value">Sunny</li>
+        <li class="label">High:</li>
+        <li class="value"><span id="current-temp">52</span>&#176;F</li>
+        <li class="label">Wind Chill:</li>
+        <li class="value"><span id="wind-chill"></span></li>
+        <li class="label">Humidity:</li>
+        <li class="value">69%</li>
+        <li class="label">Wind Speed:</li>
+        <li class="value"><span id="current-wind-speed">5</span>mph</li>
+      </ul>
+      <div id="five-day-forecast">
+        <h1 id="forecast">5 Day Weather Forecast</h1>
+        <ul id="days-grid">
+          <li>
+            <span class="day">Monday</span>
+            <img src="./images/cloud.png" alt="cloudy">
+            <span class="data">52 &#176;F</span>
+          </li>
+          <li>
+            <span class="day">Tuesday</span>
+            <img src="./images/sunny.png" alt="sunny">
+            <span class="data">57 &#176;F</span>
+          </li>
+          <li>
+            <span class="day">Wednesday</span>
+            <img src="./images/sunny.png" alt="sunny">
+            <span class="data">58 &#176;F</span>
+          </li>
+          <li>
+            <span class="day">Thursday</span>
+            <img src="./images/partial-cloudy.png" alt="partial cloudy">
+            <span class="data">56 &#176;F</span>
+          </li>
+          <li>
+            <span class="day">Friday</span>
+            <img src="./images/sunny.png" alt="sunny">
+            <span class="data">60 &#176;F</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="article">
+        <img id="article-floater" src="./images/hiker.png" alt="hiker"/>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Ut sem nulla pharetra diam sit amet nisl suscipit. In metus vulputate eu scelerisque felis imperdiet. Libero enim sed faucibus turpis in. Scelerisque fermentum dui faucibus in. Dignissim diam quis enim lobortis scelerisque fermentum dui. Sit amet risus nullam eget felis. Id leo in vitae turpis massa sed elementum tempus. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Maecenas accumsan lacus vel facilisis volutpat est velit. Vitae congue mauris rhoncus aenean vel. Non nisi est sit amet facilisis magna etiam. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Id aliquet risus feugiat in ante.
+        </p>
+        <p>  
+          Mauris commodo quis imperdiet massa. Duis ultricies lacus sed turpis tincidunt id aliquet. Neque ornare aenean euismod elementum nisi. Mollis nunc sed id semper. Vulputate ut pharetra sit amet aliquam id diam. Cras sed felis eget velit aliquet sagittis id. Dolor morbi non arcu risus quis. Id donec ultrices tincidunt arcu. A diam maecenas sed enim ut sem viverra aliquet. Nullam vehicula ipsum a arcu cursus vitae. Hendrerit dolor magna eget est lorem ipsum. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Tellus pellentesque eu tincidunt tortor. Pellentesque elit eget gravida cum sociis natoque penatibus.
+        </p>
+      </div>
+    </main>
+    <div class="contact-information">
+      <img id="map" src="./images/place-holder.jpg" data-src="./images/preston-map.png" alt="map"/>
+      <div id="footer-contact-info">
+        <h1 id="contact-info-header">The Weather Site</h1>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>999.999.9999</p>
+      </div>
+    </div>
+    <footer>
+      <div id="top">&copy;2021 The Weather Site | Attributions | Matthew Christensen</div>
+      <div id="bottom"><span id="today"></span><span> | </span><span id="days-since-last-visit"></span><span> | </span><a href="../index.html">Portal</a></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
+    <script src="./js/windchill.js"></script>
+    <script src="./js/lazy-load.js"></script>
+  </body>
+</html>
