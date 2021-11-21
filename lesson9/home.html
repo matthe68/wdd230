@@ -34,10 +34,29 @@
         <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
       </ul>
     </nav>
-    <main>
-      <div class="article" id="cards-container">
-      </div>
-    </main>
+    <div id="banner">
+      <picture class="banner-pic">
+        <source media="(max-width: 400px)" srcset="./images/Banner-400.jpg">
+        <source media="(max-width: 1000px)" srcset="./images/Banner-1000.jpg">
+        <source media="(max-width: 1600px)" srcset="./images/Banner-1600.jpg">
+        <img src="./images/Banner-2200.jpg" alt="banner pic">
+      </picture>
+      <main>
+        <div class="article" id="cards-container">
+        </div>
+      </main>
+    </div>
+    <div class="article" id="main-article">
+      <h1>Welcome!</h1>
+      Welcome to the Idaho Weather page! Whether this is your first time to our page or you visit every day,
+      we are here to help you get live updates on the latest weather in the cities of Preston, Soda Springs,
+      and Fish Haven Idaho. This page utilizes stock photos from https://www.pexels.com/ and live updates 
+      from OpenWeather APIs. This page is designed and updated by Matthew Christensen, a student at Brigham
+      Young University - Idaho. If you'd like to report a bug, you're probably my professor and can reach me 
+      through the student portal. If you are not my professor I don't really know why you are using this website.
+      This article will eventually be replaced with something more informative, but for now, enjoy the weather 
+      forcast and enjoy this place-holder text.
+    </div>
     <div class="contact-information">
       <img id="map" src="./images/place-holder.jpg" data-src="./images/preston-map.png" alt="map"/>
       <div id="footer-contact-info">
