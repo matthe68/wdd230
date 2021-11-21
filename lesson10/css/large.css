@@ -58,6 +58,11 @@
     flex-direction: column;
     position: absolute;
     bottom: 10px;
+    width: 100%;
+
+  }
+  #days-grid li {
+    width: 100%;
   }
   #five-day-forecast h1 {
     margin-bottom: 0;
@@ -71,7 +76,7 @@
     font-size: 1.2em;
   }
   #five-day-forecast #days-grid img {
-    width: 50%;
+    width: 25%;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;

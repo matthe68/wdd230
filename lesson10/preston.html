@@ -50,43 +50,43 @@
       <ul id="weather-summary">
         <li class="table-header">Todays Weather Summary</li>
         <li class="label">Currently:</li>
-        <li class="value">Sunny</li>
-        <li class="label">High:</li>
-        <li class="value"><span id="current-temp">52</span>&#176;F</li>
+        <li class="value"><span id="current-condition"></span></li>
+        <li class="label">Temperature:</li>
+        <li class="value"><span id="current-temp"></span>&#176;F</li>
         <li class="label">Wind Chill:</li>
-        <li class="value"><span id="wind-chill"></span></li>
+        <li class="value"><span id="current-wind-chill"></span>&#176;F</li>
         <li class="label">Humidity:</li>
-        <li class="value">69%</li>
+        <li class="value"><span id="current-humidity"></span>%</li>
         <li class="label">Wind Speed:</li>
-        <li class="value"><span id="current-wind-speed">5</span>mph</li>
+        <li class="value"><span id="current-wind-speed"></span>mph</li>
       </ul>
       <div id="five-day-forecast">
         <h1 id="forecast">5 Day Weather Forecast</h1>
         <ul id="days-grid">
           <li>
-            <span class="day">Monday</span>
-            <img src="./images/cloud.png" alt="cloudy">
-            <span class="data">52 &#176;F</span>
+            <span class="day" id="dayofweek1"></span>
+            <img src="./images/cloud.png" alt="cloudy" id="forcondition1">
+            <span class="data"><span id="fortemp1"></span>&#176;F</span>
           </li>
           <li>
-            <span class="day">Tuesday</span>
-            <img src="./images/sunny.png" alt="sunny">
-            <span class="data">57 &#176;F</span>
+            <span class="day" id="dayofweek2"></span>
+            <img src="./images/sunny.png" alt="sunny" id="forcondition2">
+            <span class="data"><span id="fortemp2"></span>&#176;F</span>
           </li>
           <li>
-            <span class="day">Wednesday</span>
-            <img src="./images/sunny.png" alt="sunny">
-            <span class="data">58 &#176;F</span>
+            <span class="day" id="dayofweek3"></span>
+            <img src="./images/sunny.png" alt="sunny" id="forcondition3">
+            <span class="data"><span id="fortemp3"></span>&#176;F</span>
           </li>
           <li>
-            <span class="day">Thursday</span>
-            <img src="./images/partial-cloudy.png" alt="partial cloudy">
-            <span class="data">56 &#176;F</span>
+            <span class="day" id="dayofweek4"></span>
+            <img src="./images/partial-cloudy.png" alt="partial cloudy" id="forcondition4">
+            <span class="data"><span id="fortemp4"></span>&#176;F</span>
           </li>
           <li>
-            <span class="day">Friday</span>
-            <img src="./images/sunny.png" alt="sunny">
-            <span class="data">60 &#176;F</span>
+            <span class="day" id="dayofweek5"></span>
+            <img src="./images/sunny.png" alt="sunny" id="forcondition5">
+            <span class="data"><span id="fortemp5"></span>&#176;F</span>
           </li>
         </ul>
       </div>
@@ -117,7 +117,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
-    <script src="./js/windchill.js"></script>
     <script src="./js/lazy-load.js"></script>
+    <script src="./js/live-weather-data-preston.js"></script>
+    <script src="./js/forecasted-weather-data-preston.js"></script>
   </body>
 </html>
