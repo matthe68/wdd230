@@ -46,6 +46,7 @@
     background-color: rgba(238, 238, 238, 0.9);
     font-weight: 900;
     box-shadow: 7px 7px 10px #000000;
+    width: 100%;
   }
   #days-grid li:nth-of-type(1) {
     margin-left: 0;
@@ -58,10 +59,6 @@
     flex-direction: column;
     position: absolute;
     bottom: 10px;
-    width: 100%;
-
-  }
-  #days-grid li {
     width: 100%;
   }
   #five-day-forecast h1 {
@@ -76,7 +73,7 @@
     font-size: 1.2em;
   }
   #five-day-forecast #days-grid img {
-    width: 25%;
+    width: 50%;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
@@ -93,23 +90,50 @@
   }
   #cards-container {
     grid-template-columns: 1fr 1fr 1fr;
-    margin:1em;
-    width: auto;
+    margin-top: 1vw !important;
   }
   #cards-container section {
     flex-direction: column;
     cursor: pointer;
+    box-shadow: 0px 5px 8px #1a1a1a;
+  }
+  @keyframes hovermain {
+    from {box-shadow: 0px 5px 8px #1a1a1a; margin: 0; }
+    to {box-shadow: 10px 15px 8px #1a1a1a;; margin: -5px; }
   }
   #cards-container section:hover {
-    animation-name: hoverfigure;
+    animation-name: hovermain;
     animation-duration: .2s;
     margin: -5px;
-    box-shadow: 10px 15px 8px #888888;
+    box-shadow: 10px 15px 8px #1a1a1a;
   }
   #cards-container section img {
     align-self: end;
+    max-width: 100%;
+    width: 20vw;
   }
   #cards-container section div {
-    height: 15rem;
+    height: 12rem;
+  }
+  #cards-container section p {
+    margin-top: 2% !important;
+  }
+  #cards-container section h2 {
+    margin-bottom: 1%;
+  }
+  #main-home {
+    display: float;
+    position: absolute;
+    top: 2vw;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(238, 238, 238, 0.0);
+    box-shadow: none;
+  }
+  #main-home div section {
+    background-color:rgba(238, 238, 238, 0.6) !important; 
   }
 }
