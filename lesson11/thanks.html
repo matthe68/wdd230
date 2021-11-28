@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1">
+    <title>Preston Weather</title>
+    <link type="text/css" rel="stylesheet" href="./css/small.css">
+    <link type="text/css" rel="stylesheet" href="./css/medium.css">
+    <link type="text/css" rel="stylesheet" href="./css/large.css">
+    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="./js/preston.js"></script>
+    <script src="https://kit.fontawesome.com/cd47c3c73d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <ul id="notification-banner"></ul>
+    <header>
+      <img src="./images/weather-icon.png" alt="weather icon">
+      <div id="stacked-header">
+        <h1>Idaho Weather</h1>
+        <p>Getting YOU out there</p>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li class="navElement" onclick = "toggleActive(this)"><a href="home.html">Home</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="preston.html">Preston</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="soda-springs.html">Soda Springs</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="fish-haven.html">Fish Haven</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="storm-center.html">Storm Center</a></li>
+        <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="article">
+        <h1 class="first-header">Storm Report Being Processes</h1>
+        <p>Thank you for submitting your your weather report, it is currently being processed. If this is an emergency, please dial 911. Your report may take up to 24 hours to be processed.</p>
+      </div>
+    </main>
+    <div class="contact-information">
+      <img id="map" src="./images/place-holder.jpg" data-src="./images/preston-map.png" alt="map"/>
+      <div id="footer-contact-info">
+        <h1 id="contact-info-header">The Weather Site</h1>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>999.999.9999</p>
+      </div>
+    </div>
+    <footer>
+      <div id="top">&copy;2021 The Weather Site | Attributions | Matthew Christensen</div>
+      <div id="bottom"><span id="today"></span><span> | </span><span id="days-since-last-visit"></span><span> | </span><a href="../index.html">Portal</a></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
+    <script src="./js/lazy-load.js"></script>
+    <script src="./js/storm-center.js"></script>
+  </body>
+</html>

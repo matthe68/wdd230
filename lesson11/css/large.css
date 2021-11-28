@@ -1,0 +1,138 @@
+@media only screen and (min-width: 50em) {
+  nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+50,b3bead+100 */
+    background: #fcfff4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 50%, #b3bead 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 50%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 50%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+  }
+  nav ul li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .contact-information {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-information img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-information #footer-contact-info {
+    margin-left: 30px;
+    text-align: left;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #days-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 0;
+    z-index: 2;
+  
+  }
+  #days-grid li {
+    display: flex;
+    flex-direction: column;
+    margin-left: .1em;
+    margin-right: .1em;
+    background-color: rgba(238, 238, 238, 0.9);
+    font-weight: 900;
+    box-shadow: 7px 7px 10px #000000;
+    width: 100%;
+  }
+  #days-grid li:nth-of-type(1) {
+    margin-left: 0;
+  }
+  #days-grid li:nth-of-type(5) {
+    margin-right: 0;
+  }
+  #five-day-forecast {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  #five-day-forecast h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgb(0,46,93);
+    background-color: rgba(255, 255, 255, 0.809);
+  }
+  #days-grid li .day {
+    background-color: rgb(0,46,93);
+    color: white;
+    font-size: 1.2em;
+  }
+  #five-day-forecast #days-grid img {
+    width: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #days-grid li .data {
+    font-size: 1.2em;
+  }
+  .gallery figure:hover {
+    animation-name: hoverfigure;
+    animation-duration: .2s;
+    margin: -5px;
+    box-shadow: 10px 15px 8px #888888;
+  }
+  #cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1vw !important;
+  }
+  #cards-container section {
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 5px 8px #1a1a1a;
+  }
+  @keyframes hovermain {
+    from {box-shadow: 0px 5px 8px #1a1a1a; margin: 0; }
+    to {box-shadow: 10px 15px 8px #1a1a1a;; margin: -5px; }
+  }
+  #cards-container section:hover {
+    animation-name: hovermain;
+    animation-duration: .2s;
+    margin: -5px;
+    box-shadow: 10px 15px 8px #1a1a1a;
+  }
+  #cards-container section img {
+    align-self: end;
+    max-width: 100%;
+    width: 20vw;
+  }
+  #cards-container section div {
+    height: 12rem;
+  }
+  #cards-container section p {
+    margin-top: 2% !important;
+  }
+  #cards-container section h2 {
+    margin-bottom: 1%;
+  }
+  #main-home {
+    position: absolute;
+    top: 2vw;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(238, 238, 238, 0.0);
+    box-shadow: none;
+  }
+  #main-home div section {
+    background-color:rgba(238, 238, 238, 0.6) !important; 
+  }
+}
