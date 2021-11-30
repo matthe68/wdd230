@@ -65,6 +65,11 @@
   #storm-center-form {
     width: 96%;
   }
+  /*------upcoming events -------*/
+  #upcoming-events {
+    max-width: 500px;
+  }
+  /*-----------------------------*/
   @media (max-width: 50em) {
     #cards-container{
       grid-template-columns: 1fr;

@@ -470,3 +470,17 @@ form label textarea {
   margin-top: 0;
   font-size: 5em;
 }
+/*----------upcoming events----------------*/
+#upcoming-events {
+  margin-top: 1em;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 0 5px 8px #888888;
+  overflow: hidden;
+  text-align: center;
+}
+/*-----------------------------------------*/
