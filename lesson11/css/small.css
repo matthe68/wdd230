@@ -164,6 +164,9 @@ h1, h2 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 a {
+  color: rgb(0,46,93);
+}
+a:hover {
   color: rgb(46, 196, 182);
 }
 #banner img {
@@ -451,6 +454,7 @@ form label textarea {
   margin-right: auto;
   margin-bottom: 0;
 }
+
 /* --------------------------------------*/
 #main-article {
   background-color: white;
