@@ -442,6 +442,9 @@ form label textarea {
 #cards-container section p {
   font-size: 1.2em;
 }
+#article .banner-pic img {
+  width: 100%;
+}
 #cards-container section img {
   width: 100%;
   margin-left: auto;

@@ -47,7 +47,7 @@ fetch(requestURL)
           }
           card.onclick = openLink;
 
-          document.querySelector('div.article').appendChild(card);
+          document.querySelector('#cards-container').appendChild(card);
           firstItem = false;
         }
       }
