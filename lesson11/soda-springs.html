@@ -3,8 +3,8 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=decive-width, initial-scale=1">
-    <title>Preston Weather</title>
+    <title>Soda Springs Weather</title>
+    <meta name="description" content="Weather forecast for Soda Springs, Idaho">
     <link type="text/css" rel="stylesheet" href="./css/small.css">
     <link type="text/css" rel="stylesheet" href="./css/medium.css">
     <link type="text/css" rel="stylesheet" href="./css/large.css">
@@ -36,6 +36,61 @@
         <li class="navElement" onclick = "toggleActive(this)"><a href="gallary.html">Gallery</a></li>
       </ul>
     </nav>
+    <div id="banner">
+      <!-- <figure>
+        <img src="images/wdd230_image_franklinOriginal.jpeg"/>
+        <img src="./images/clouds-1000.png" alt="clouds"/>
+      </figure> -->
+      <picture class="banner-pic">
+        <source media="(max-width: 400px)" srcset="./images/Banner-400.jpg">
+        <source media="(max-width: 1000px)" srcset="./images/Banner-1000.jpg">
+        <source media="(max-width: 1600px)" srcset="./images/Banner-1600.jpg">
+        <img src="./images/Banner-2200.jpg" alt="banner pic">
+      </picture>
+      <ul id="weather-summary">
+        <li class="table-header">Todays Weather Summary</li>
+        <li class="label">Currently:</li>
+        <li class="value"><span id="current-condition"></span></li>
+        <li class="label">Temperature:</li>
+        <li class="value"><span id="current-temp"></span>&#176;F</li>
+        <li class="label">Wind Chill:</li>
+        <li class="value"><span id="current-wind-chill"></span>&#176;F</li>
+        <li class="label">Humidity:</li>
+        <li class="value"><span id="current-humidity"></span>%</li>
+        <li class="label">Wind Speed:</li>
+        <li class="value"><span id="current-wind-speed"></span>mph</li>
+      </ul>
+      <div id="five-day-forecast">
+        <h1 id="forecast">5 Day Weather Forecast</h1>
+        <ul id="days-grid">
+          <li>
+            <span class="day" id="dayofweek1"></span>
+            <img src="" alt="weather icon" height=79 id="forcondition1">
+            <span class="data"><span id="fortemp1"></span>&#176;F</span>
+          </li>
+          <li>
+            <span class="day" id="dayofweek2"></span>
+            <img src="" alt="weather icon" height=79 id="forcondition2">
+            <span class="data"><span id="fortemp2"></span>&#176;F</span>
+          </li>
+          <li>
+            <span class="day" id="dayofweek3"></span>
+            <img src="" alt="weather icon" height=79 id="forcondition3">
+            <span class="data"><span id="fortemp3"></span>&#176;F</span>
+          </li>
+          <li>
+            <span class="day" id="dayofweek4"></span>
+            <img src="" alt="weather icon" height=79 id="forcondition4">
+            <span class="data"><span id="fortemp4"></span>&#176;F</span>
+          </li>
+          <li>
+            <span class="day" id="dayofweek5"></span>
+            <img src="" alt="weather icon" height=79 id="forcondition5">
+            <span class="data"><span id="fortemp5"></span>&#176;F</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
       <div class="article">
 
@@ -57,5 +112,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ["Maitree", "Source Sans Pro"]}})</script>
     <script src="./js/lazy-load.js"></script>
+    <script src="./js/live-weather-data-soda-springs.js"></script>
+    <script src="./js/forecasted-weather-data-soda-springs.js"></script>
   </body>
 </html>
