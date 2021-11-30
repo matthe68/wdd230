@@ -163,10 +163,10 @@ h1, h2 {
   color: rgb(255, 255, 255);
   font-family: 'Source Sans Pro', sans-serif;
 }
-a {
+footer a {
   color: rgb(0,46,93);
 }
-a:hover {
+footer a:hover {
   color: rgb(46, 196, 182);
 }
 #banner img {
