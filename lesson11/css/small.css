@@ -139,7 +139,7 @@ nav ul.hide {
 }
 .gallery figure img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .gallery figure figcaption {
   font-style: italic;
@@ -453,7 +453,6 @@ form label textarea {
 }
 #cards-container section img {
   width: 100%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
